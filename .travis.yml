@@ -1,0 +1,13 @@
+language: go
+go:
+- '1.13'
+git:
+  depth: false
+before_install:
+- export GOPATH=$HOME/gopath
+script:
+- cp update_modules.sh $HOME
+- "$HOME/update_modules.sh"
+env:
+  global:
+    secure: p06m+f+nGdq92hO4J/PZJCPAKmKIlrqXdx7qBAGiNgAmUor46alZz85oqief9MEtBKVvBqGXkPTLVQY4Qpqp90pO8FcE6EsT4B/461sLL7aHdj+RD8x9rlL3KB1qggQrCx4Q+DZgCg0lFeNW55ViDQkT/PwYvJJ4a6HBoMeyLmHWipHLXJB4h8GYK/FCtK2s7Lb/HOAg+pUQu9iS8dTt4TjmzrIjkF6MHoxkUHs/AOKcKlZtSp2TiT18b2Gu1UYPyoZyCIe6Z8HZssQ1lTES0aN0ObS89/IWWvH/YKf8XkRDt8zBEpx4Slcv4aa96BCRlZZ8/xlb/hAXYoB7tGkbLSHhup4UQbe3wZ/sdhlffJBG9BaKjPsDFzXAztFzQIWd9Mj7/16b2oisq39H9H9vL7j3/S7wtfAopkyWrjr98k3WHSWEWgRI5+qBtCajDERpeeUuq/5CG8VOEkMCokklija/ZPoEJEs5ekwObvPARCSfcFW5QdnOhijf8Wz8nPWSoZ65YbhiZk/DTBvbahDjR8IxcfudYI5/oxAyAAVmji4bPOP03cCAwwQ7Z4TKvtrLeUNj8K37wtT6MWunVNprSinUCx2alAEK7H58Ed7I7RxDTENbs/Y13sF6AhlGqO1kDO7Xj7wRGXqo28msAcrV96QPwavSKW0oay8PtN3W6D4=
